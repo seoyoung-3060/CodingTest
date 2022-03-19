@@ -1,7 +1,6 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
-#include <string>
 using namespace std;
 int n;
 
@@ -18,7 +17,7 @@ bool comp(string a, string b){
         }
         int bs = 0;
         for(int i=0; i<b.size(); i++){
-            if('0'<=b[i] && b[i]<='9'){
+            if('0'<=b[i] && b[i]<='9'){ //isdigit은 쓰지말자..
                 bs += (b[i]-'0');
             }
         }
